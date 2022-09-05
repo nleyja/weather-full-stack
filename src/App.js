@@ -29,7 +29,7 @@ function App() {
 
   // useEffect (getWeather,[])
  // happens on component mount
-
+ // 
  const getFormattedWord = (rawWord) => {
   let formattedWord = rawWord.toLowerCase();
   formattedWord = formattedWord.charAt(0).toUpperCase() + formattedWord.slice(1) // returns word with first letter capitalized
