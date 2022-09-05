@@ -9,7 +9,7 @@ function App() {
   const [ weather, setWeather] =useState()
 
     const getWeather = (city) => {
-      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=dd1f22729598cb482d2d5c16faf96c1d`)
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=dd1f22729598cb482d2d5c16faf96c1d&units=imperial`)
     .then((res)=> {
       console.log(res);
       return res.json()
